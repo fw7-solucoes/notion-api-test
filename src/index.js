@@ -10,10 +10,11 @@ const run = async () => {
   })
 
   const normalizedRecords = response.results.map(record => {
+    const company = record.properties.Company.select
     const tags = record.properties.Tags.multi_select
     const title = record.properties.Name.title[0].plain_text
 
-    return { title, tags }
+    return { title, tags, company }
   })
 
   console.log(JSON.stringify(normalizedRecords, null, 2))
