@@ -1,0 +1,16 @@
+{
+  "name": "notion-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Roberto Umbelino <roberto.umb@gmail.com>",
+  "scripts": {
+    "start": "node src"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@notionhq/client": "^2.2.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
